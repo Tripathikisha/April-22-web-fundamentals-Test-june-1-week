@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Question2</title>
+</head>
+<body>
+    <h2>Q2:  Write a program to display the cube of the number upto given an integer.</h2>
+    <h1>Answer....</h1>
+
+    <h1>Click This Button....... <button onclick="myFun()">Display cube!!</button></h1>
+
+    <p id="output"></p>
+
+    
+    <script>
+        function myFun()
+        {
+            let num = prompt("Enter Any number : ");
+
+
+            let sum=0;
+
+            let text="";
+
+            if(num !=  null)
+            {
+                for(let i =1; i<=num;i++)
+                {
+                   text += (i*i*i) + "<br>"
+                }
+
+                document.getElementById("output").innerHTML = text;
+
+            }
+            else
+            {
+                document.getElementById("output").innerHTML = "Sorry Empty value not allow :(";
+            }
+            
+
+            
+        }
+
+
+    </script>
+</body>
+</html>
